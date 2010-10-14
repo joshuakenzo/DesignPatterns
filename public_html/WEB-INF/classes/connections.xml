@@ -1,0 +1,12 @@
+<?xml version = '1.0'?>
+<!DOCTYPE connections>
+<connections>
+   <connection>
+      <URL>ormi://localhost</URL>
+      <ConnectionName>Localhost</ConnectionName>
+      <user>admin</user>
+      <ConnectionType>OC4J</ConnectionType>
+      <JNDI_INITIAL_CONTEXT_FACTORY>com.evermind.server.rmi.RMIInitialContextFactory</JNDI_INITIAL_CONTEXT_FACTORY>
+      <TARGET_NODE>http-web-site</TARGET_NODE>
+   </connection>
+</connections>

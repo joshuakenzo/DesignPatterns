@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+                         "http://java.sun.com/j2ee/dtds/web-app_2_3.dtd">
+<web-app>
+  
+    <!-- Filtro do Lazy-->
+    <filter>
+        <filter-name>HibernateFilter</filter-name>
+        <filter-class>br.gov.fnde.lib.hibernate.HibernateFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>HibernateFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+
+    <!-- Configuração da Action Servlet -->
+    <servlet>
+        <servlet-name>action</servlet-name>
+        <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+        <init-param>
+             <param-name>config</param-name>
+             <param-value>/WEB-INF/struts-config.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <!-- Mapeamento da Action Servlet Default -->
+    <servlet-mapping>
+        <servlet-name>action</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+   
+    <!-- Timeout da sessao -->
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+
+    <!-- Mapeamentos MIME -->
+    <mime-mapping>
+        <extension>html</extension>
+        <mime-type>text/html</mime-type>
+    </mime-mapping>
+
+    <mime-mapping>
+        <extension>txt</extension>
+        <mime-type>text/plain</mime-type>
+    </mime-mapping>
+
+    <!-- Tela inicial do sistema -->
+    <welcome-file-list>
+        <welcome-file>/Index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Taglibs Struts -->
+    <taglib>
+        <taglib-uri>struts-bean.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-bean.tld</taglib-location>
+    </taglib>
+    
+    <taglib>
+        <taglib-uri>struts-html.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-html.tld</taglib-location>
+    </taglib>
+    
+    <taglib>
+        <taglib-uri>struts-logic.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-logic.tld</taglib-location>
+    </taglib>
+    
+    <taglib>
+        <taglib-uri>struts-bean-el.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-bean-el.tld</taglib-location>
+    </taglib>
+    
+    <taglib>
+        <taglib-uri>struts-html-el.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-html-el.tld</taglib-location>
+    </taglib>
+    
+    <taglib>
+        <taglib-uri>struts-logic-el.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-logic-el.tld</taglib-location>
+    </taglib>
+
+    <taglib>
+        <taglib-uri>struts-tiles.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-tiles.tld</taglib-location>
+    </taglib>
+
+    <taglib>
+        <taglib-uri>fmt.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/fmt.tld</taglib-location>
+    </taglib>
+
+    <taglib>
+        <taglib-uri>c.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+    </taglib>
+
+    <!-- Tag Library Descriptors da aplicacao-->
+    <taglib>
+        <taglib-uri>struts-fnde.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-fnde.tld</taglib-location>
+    </taglib>
+  
+    <taglib>
+        <taglib-uri>telaprocessual.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/telaprocessual.tld</taglib-location>
+    </taglib>
+
+    <taglib>
+        <taglib-uri>webmenu.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/webmenu.tld</taglib-location>
+    </taglib>
+
+    <taglib>
+        <taglib-uri>struts-menu.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/struts-menu.tld</taglib-location>
+    </taglib>
+  
+    <taglib>
+        <taglib-uri>display.tld</taglib-uri>
+        <taglib-location>/WEB-INF/tld/display.tld</taglib-location>
+    </taglib>
+
+    <!-- Restricoes de seguranca -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>action servlet</web-resource-name>
+            <url-pattern>*.do</url-pattern>
+            <http-method>POST</http-method>
+            <http-method>GET</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>principal</web-resource-name>
+            <url-pattern>/Index.jsp</url-pattern>
+            <url-pattern>/IndexBody.jsp</url-pattern>
+            <http-method>POST</http-method>
+            <http-method>GET</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <!-- Tela de Login -->
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/Login.jsp</form-login-page>
+            <form-error-page>/Login.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
+    <!-- Roles/Grupos definidos para esta aplicação -->
+    <security-role>
+        <description>Usuarios Internos</description>
+        <role-name>indenizacao_interno</role-name>
+    </security-role>
+
+    <security-role>
+        <description>Empresas</description>
+        <role-name>indenizacao_externo</role-name>
+    </security-role>
+
+</web-app>

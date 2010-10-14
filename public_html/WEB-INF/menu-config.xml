@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<MenuConfig>
+
+    <Displayers>
+        <Displayer  name="DropDown"     type="com.fgm.web.menu.displayer.DropDownMenuDisplayer"/>
+        <Displayer  name="Simple"       type="com.fgm.web.menu.displayer.SimpleMenuDisplayer"/>
+        <Displayer  name="MenuPadrao"   type="com.fgm.web.menu.displayer.CoolMenuDisplayer"/>
+        <Displayer  name="CoolMenu4"    type="com.fgm.web.menu.displayer.CoolMenuDisplayer4"/>
+        <Displayer  name="MenuForm"     type="com.fgm.web.menu.example.PermissionsFormMenuDisplayer"/>
+        <Displayer  name="ListMenu"     type="com.fgm.web.menu.displayer.ListMenuDisplayer"/>
+        <Displayer  name="TabbedMenu"   type="com.fgm.web.menu.displayer.TabbedMenuDisplayer"/>
+    </Displayers>
+
+    <Menus>
+
+        <Menu  name="MenuSistema"  title="Menu"  description="menu" width="150">
+<!-- NOVO - PRIMEIRO ITEM DO SISTEMA -->
+            <Item name="item1" title="Item 1">
+                <Item   name="item11" title="Item 1.1">    
+                        <Item   name="item111"    
+                                title="Item 1.1.1"   
+                                page="pagina.do"/>
+                        
+                        <Item    
+                                name="item112"    
+                                title="Item 1.1.2"   
+                                page="/Index.jsp"/>
+                        
+                        <Item
+                                name="item113"    
+                                title="Item 1.1.3"   
+                                page="pagina.do"/>
+                </Item>
+                        
+               <Item    name="item12" title="Item 1.2">   
+                        <Item   name="item121"    
+                                title="Item 1.2.1"   
+                                page="pagina.do"/>
+                        
+                        <Item    
+                                name="item122"    
+                                title="Item 1.2.2"   
+                                page="pagina.do"/>
+                        
+                        <Item
+                                name="item123"    
+                                title="Item 1.2.3" 
+                                roles="aplicacao_nomegrupo"
+                                page="pagina.do"/>
+                </Item>
+                        
+               <Item    name="item13"   
+                        title="Item 1.3"  
+                         page="pagina.do"/>
+            </Item>
+<!-- ABRIR - SEGUNDO ITEM DO SISTEMA -->            
+            <Item name="item2" title="Item 2" roles="analistas,sistema">
+                <Item   name="item21"    
+                        title="Item 2.1"   
+                        page="pagina.do"/>
+                        
+                <Item   name="item22"   
+                        title="Item 2.2"    
+                        page="pagina.do"/>
+                        
+                <Item   name="item23"  
+                        title="item 2.3"   
+                        page="pagina.do"/>
+            </Item>
+<!-- CONSULTA - TERCEIRO ITEM DO SISTEMA -->            
+             <Item name="item3" title="Item 3">
+                <Item   name="item31"    
+                        title="Item 3.1"   
+                        page="pagina.do"/>
+                        
+                <Item   name="item32"   
+                        title="Item 3.2"    
+                        page="pagina.do"/>
+                        
+                <Item   name="item33"  
+                        title="item 3.3"   
+                        page="pagina.do"/>
+            </Item>
+<!-- SAIR - QUARTO ITEM DO SISTEMA -->                       
+            <Item   name="item4" 
+                    title="Item 4" 
+                    page="pagina.do"/>
+        </Menu>
+
+  </Menus>
+
+</MenuConfig>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS ENTITY="StrutsProcess">
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="agente" NAME="forward0"
+  PATH="/agente.do" SHAPE="20,20,0,0" TARGET="action3" TITLE="agente" TYPE="forward"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#visualizardadosfnde"
+  NAME="action2" PATH="/visualizardadosfnde" SHAPE="20,120,201,72"
+  TITLE="VisualizarDadosFNDEForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="identificacaoAluno" NAME="forward0" PATH="identificacaoAluno"
+   TARGET="page4" TITLE="identificacaoAluno" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="identificacaoEscola" NAME="forward1" PATH="identificacaoEscola"
+   TARGET="page5" TITLE="identificacaoEscola" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="visualizarDadosFNDE" NAME="forward2" PATH="visualizarDadosFNDE"
+   TARGET="page6" TITLE="visualizarDadosFNDE" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#agente" NAME="action3"
+  PATH="/agente" SHAPE="200,29,0,0" SUBTYPE="unknown" TYPE="action"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page0"
+  PATH="demonstrativoDivergencia" SHAPE="255,308,55,30" SUBTYPE="tile"
+  TITLE="demonstrativoDivergencia" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page1"
+  PATH="selecionarSemestre" SHAPE="249,385,55,30" SUBTYPE="tile"
+  TITLE="selecionarSemestre" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page2"
+  PATH="localizarContribuinte" SHAPE="291,522,55,30" SUBTYPE="tile"
+  TITLE="localizarContribuinte" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page3"
+  PATH="telaInicial" SHAPE="294,589,55,30" SUBTYPE="tile"
+  TITLE="telaInicial" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page4"
+  PATH="identificacaoAluno" SHAPE="315,129,55,30" SUBTYPE="tile"
+  TITLE="identificacaoAluno" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page5"
+  PATH="identificacaoEscola" SHAPE="360,176,55,30" SUBTYPE="tile"
+  TITLE="identificacaoEscola" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page6"
+  PATH="visualizarDadosFNDE" SHAPE="326,237,55,30" SUBTYPE="tile"
+  TITLE="visualizarDadosFNDE" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#localizarcontribuinte"
+  NAME="action4" PATH="/localizarcontribuinte" SHAPE="19,518,198,58"
+  TITLE="LocalizarContribuinteForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="localizarContribuinte" NAME="forward0"
+   PATH="localizarContribuinte" TARGET="page2"
+   TITLE="localizarContribuinte" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput" ID="telaInicial"
+   NAME="forward1" PATH="telaInicial" TARGET="page3" TITLE="telaInicial" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#selecionarsemestre"
+  NAME="action5" PATH="/selecionarsemestre" SHAPE="19,298,188,58"
+  TITLE="SelecionarSemestreForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="demonstrativoDivergencia" NAME="forward0"
+   PATH="demonstrativoDivergencia" TARGET="page0"
+   TITLE="demonstrativoDivergencia" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="selecionarSemestre" NAME="forward1" PATH="selecionarSemestre"
+   TARGET="page1" TITLE="selecionarSemestre" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" ID="#manterdadostemporarios"
+  NAME="action0" PATH="/manterdadostemporarios" SHAPE="19,738,231,72"
+  TITLE="ManterDadosTemporariosForm" TYPE="action">
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="identificacaoAlunoTemporario" NAME="forward0"
+   PATH="identificacaoAlunoTemporario" TARGET="page7"
+   TITLE="identificacaoAlunoTemporario" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="identificacaoEscolaTemporario" NAME="forward1"
+   PATH="identificacaoEscolaTemporario" TARGET="page8"
+   TITLE="identificacaoEscolaTemporario" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="listaAlunoTemporario" NAME="forward2" PATH="listaAlunoTemporario"
+   TARGET="page10" TITLE="listaAlunoTemporario" TYPE="forward"/>
+  <PROCESS-ITEM-OUTPUT ENTITY="StrutsProcessItemOutput"
+   ID="importaDadosTemporarios" NAME="forward3"
+   PATH="importaDadosTemporarios" TARGET="page9"
+   TITLE="importaDadosTemporarios" TYPE="forward"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page7"
+  PATH="identificacaoAlunoTemporario" SHAPE="332,701,55,30"
+  SUBTYPE="tile" TITLE="identificacaoAlunoTemporario" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page8"
+  PATH="identificacaoEscolaTemporario" SHAPE="385,763,55,30"
+  SUBTYPE="tile" TITLE="identificacaoEscolaTemporario" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page10"
+  PATH="listaAlunoTemporario" SHAPE="371,822,55,30" SUBTYPE="tile"
+  TITLE="listaAlunoTemporario" TYPE="page"/>
+ <PROCESS-ITEM ENTITY="StrutsProcessItem" NAME="page9"
+  PATH="importaDadosTemporarios" SHAPE="322,892,55,30" SUBTYPE="tile"
+  TITLE="importaDadosTemporarios" TYPE="page"/>
+</PROCESS>

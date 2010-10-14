@@ -1,0 +1,14 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config.dtd">
+
+<tiles-definitions>
+    <!-- Template para um arquivo de configuracao do tiles -  Utilizar um por U.C. -->
+
+    <!-- Definicao de uma tela tipica -->
+    <definition name="TelaMenu" extends="menuLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/nomeCasodeUso/pagina.jsp"/>
+    </definition>
+
+</tiles-definitions>

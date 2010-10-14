@@ -1,0 +1,22 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config.dtd">
+
+<tiles-definitions>
+
+    <definition name="ListaAluno" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/visualizardadosfnde/ListaAluno.jsp"/>
+    </definition>
+
+    <definition name="IdentificacaoAluno" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/visualizardadosfnde/IdentificacaoAluno.jsp"/>
+    </definition>
+
+    <definition name="IdentificacaoEscola" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/visualizardadosfnde/IdentificacaoEscola.jsp"/>
+    </definition>
+
+</tiles-definitions>

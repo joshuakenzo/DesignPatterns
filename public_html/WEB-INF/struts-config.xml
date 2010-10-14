@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+ <data-sources/>
+ <!-- Definicoes de FormBeans -->
+ <form-beans>
+  <form-bean name="LocalizarContribuinteForm" type="br.gov.fnde.sistema.indenizacao.localizarcontribuinte.LocalizarContribuinteForm"/>
+  <form-bean name="SelecionarSemestreForm" type="br.gov.fnde.sistema.indenizacao.selecionarsemestre.SelecionarSemestreForm"/>
+  <form-bean name="VisualizarDadosFNDEForm" type="br.gov.fnde.sistema.indenizacao.visualizardadosfnde.VisualizarDadosFNDEForm"/>
+  <form-bean name="ManterDadosTemporariosForm" type="br.gov.fnde.sistema.indenizacao.manterdadostemporarios.ManterDadosTemporariosForm"/>
+ </form-beans>
+ <global-exceptions/>
+ <global-forwards>
+  <forward name="agente" path="/agente.do"/>
+ </global-forwards>
+ <!-- Acoes -->
+ <action-mappings>
+  <action name="LocalizarContribuinteForm" parameter="operation"
+   path="/localizarcontribuinte" scope="session" type="br.gov.fnde.sistema.indenizacao.localizarcontribuinte.LocalizarContribuinteAction">
+   <forward name="localizarContribuinte" path="LocalizarContribuinte"/>
+   <forward name="telaInicial" path="TelaInicial"/>
+  </action>
+  <action name="SelecionarSemestreForm" parameter="operation"
+   path="/selecionarsemestre" scope="session" type="br.gov.fnde.sistema.indenizacao.selecionarsemestre.SelecionarSemestreAction">
+   <forward name="selecionarSemestre" path="SelecionarSemestre"/>
+   <forward name="demonstrativoDivergencia" path="DemonstrativoDivergencia"/>
+  </action>
+  <action name="VisualizarDadosFNDEForm" parameter="operation"
+   path="/visualizardadosfnde" scope="session" type="br.gov.fnde.sistema.indenizacao.visualizardadosfnde.VisualizarDadosFNDEAction">
+   <forward name="listaAluno" path="ListaAluno"/>
+   <forward name="identificacaoAluno" path="IdentificacaoAluno"/>
+   <forward name="identificacaoEscola" path="IdentificacaoEscola"/>
+  </action>
+  <action name="ManterDadosTemporariosForm" parameter="operation"
+   path="/manterdadostemporarios" scope="session" type="br.gov.fnde.sistema.indenizacao.manterdadostemporarios.ManterDadosTemporariosAction">
+   <forward name="identificacaoAlunoTemporario" path="IdentificacaoAlunoTemporario"/>
+   <forward name="identificacaoEscolaTemporario" path="IdentificacaoEscolaTemporario"/>
+   <forward name="listaAlunoTemporario" path="ListaAlunoTemporario"/>
+   <forward name="importaDadosTemporario" path="ImportaDadosTemporario"/>
+  </action>
+ </action-mappings>
+ <controller/>
+ <!-- Arquivo de recursos padrao - n�o alterar -->
+ <message-resources parameter="resources.Application"/>
+ <!-- Plug-in Tiles -->
+ <plug-in className="org.apache.struts.tiles.TilesPlugin">
+  <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml, /WEB-INF/tiles-SelecionarSemestre.xml, /WEB-INF/tiles-LocalizarContribuinte.xml, /WEB-INF/tiles-VisualizarDadosFNDE.xml, /WEB-INF/tiles-ManterDadosTemporarios.xml"/>
+  <set-property property="definitions-debug" value="1"/>
+  <set-property property="definitions-parser-details" value="0"/>
+  <set-property property="definitions-parser-validate" value="true"/>
+  <set-property property="moduleAware" value="true"/>
+ </plug-in>
+ <!-- Plug-in Validator -->
+ <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+  <set-property property="pathnames" value="/WEB-INF/validator-rules.xml, /WEB-INF/validation-VisualizarDadosFNDE.xml, /WEB-INF/validation-ManterDadosTemporarios.xml"/>
+ </plug-in>
+</struts-config>

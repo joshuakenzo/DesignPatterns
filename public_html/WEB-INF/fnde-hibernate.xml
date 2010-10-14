@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE fnde-hibernate PUBLIC "-//FNDE/Hibernate 1.0//PT" "http://intranet/informatica/objetos/dtds/fnde-hibernate-1.0.dtd">
+<fnde-hibernate>
+    <!-- Informar o nome do datasource para a aplicacao-->
+    <datasource>jdbc/IndenizacaoDS</datasource>
+</fnde-hibernate>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<resource-config>
+
+  <loadable-resources>
+     <resource name="com.fgm.web.menu.MENU_REPOSITORY" 
+               loadParam="/WEB-INF/menu-config.xml"
+               type="com.fgm.web.menu.MenuRepository"/>
+  </loadable-resources>
+
+  <message-resources>
+     <resource name="ISOCodeRes"  type="ISOCodeRes"/>
+  </message-resources>
+
+</resource-config>

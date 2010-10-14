@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+
+    <!-- Layout Base -->
+    <definition name="baseLayout" path="/layouts/BaseLayout.jsp">
+        <put name="windowTitleKey"/>
+        <put name="titleKey"/>
+        <put name="header" value="/common/Header.jsp"/>
+        <put name="messages" value="/common/Messages.jsp"/>
+        <put name="content"/>
+        <!-- Arquivos de Javascript -->
+        <putList name="scripts">
+            <add value="/js/mascara.js"/>
+        </putList>
+        <!-- Arquivos de Stylesheet -->
+        <putList name="styles">
+            <add value="/css/estilo_padrao.css"/>
+        </putList>
+    </definition>
+    
+    <!-- Layout para telas Processuais -->
+    <definition name="processualLayout" extends="baseLayout">
+        <put name="windowTitleKey" value="aplicacao.title"/>
+        <put name="content"/>
+    </definition>
+
+    <!-- Layout para telas Popup -->
+    <definition name="popupLayout" extends="baseLayout">
+        <put name="header" value="/common/HeaderPopup.jsp"/>
+    </definition>
+
+    <!-- Layout menu -->
+    <definition name="menuLayout" extends="processualLayout" path="/layouts/MenuLayout.jsp">
+        <put name="menu" value="/common/Menu.jsp"/>
+        <putList name="scripts">
+            <add value="/js/mascara.js"/>
+            <add value="/js/coolmenus3.js"/>
+            <add value="/js/coolmenu-config.js"/>
+        </putList>
+    </definition>
+
+</tiles-definitions>

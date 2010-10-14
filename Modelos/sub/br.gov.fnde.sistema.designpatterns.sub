@@ -1,0 +1,3611 @@
+
+(object Petal
+    version    	46
+    _written   	"Rose 7.7.0204.3001"
+    charSet    	0)
+
+(object SubSystem "desingpatterns"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4182C16201EC"
+    visible_modules 	(list dependency_list
+	(object Module_Visibility_Relationship
+	    quid       	"4182CA1A02A0"
+	    supplier   	"Component View::java::util"
+	    quidu      	"3FCE4F4E03A6"
+	    supplier_is_subsystem 	TRUE)
+	(object Module_Visibility_Relationship
+	    quid       	"418A4EFE004E"
+	    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::prototype"
+	    quidu      	"418A23B902AF"
+	    supplier_is_subsystem 	TRUE))
+    physical_models 	(list unit_reference_list
+	(object module "Soup" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\Soup.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CmIdentification"
+		    value      	(value Text ""))
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CopyrightNotice"
+		    value      	(value Text "")))
+	    quid       	"4182C16F01FB"
+	    stereotype 	""
+	    visible_modules 	(list dependency_list
+		(object Module_Visibility_Relationship
+		    quid       	"4182CA3C01D4"
+		    supplier   	"Component View::java::util::ArrayList"
+		    quidu      	"3FCE5F4B00B9"
+		    supplier_is_spec 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"4182CA3C0203"
+		    supplier   	"Component View::java::util::ListIterator"
+		    quidu      	"3FCE5F390367"
+		    supplier_is_spec 	TRUE))
+	    language   	"Java")
+	(object module "BostonClamChowder" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\BostonClamChowder.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CmIdentification"
+		    value      	(value Text ""))
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CopyrightNotice"
+		    value      	(value Text "")))
+	    quid       	"4182C1AD00C3"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "BostonFishChowder" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\BostonFishChowder.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C1BE02E6"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "ChickenSoup" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\ChickenSoup.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C1CB0353"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "ClamChowder" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\ClamChowder.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C2390353"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "FishChowder" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\FishChowder.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C2460094"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "HonoluluClamChowder" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\HonoluluClamChowder.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C24F03E0"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "HonoluluFishChowder" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\HonoluluFishChowder.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C25A02F5"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "Minnestrone" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\Minnestrone.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C26600F2"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "PastaFazoule" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\PastaFazoule.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C272016F"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "SoupBuffet" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\SoupBuffet.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CmIdentification"
+		    value      	(value Text ""))
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CopyrightNotice"
+		    value      	(value Text "")))
+	    quid       	"4182C27D0121"
+	    stereotype 	""
+	    visible_modules 	(list dependency_list
+		(object Module_Visibility_Relationship
+		    quid       	"4182CE1C0374"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::PastaFazoule"
+		    quidu      	"4182C272016F"
+		    supplier_is_spec 	TRUE))
+	    language   	"Java")
+	(object module "TofuSoup" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\TofuSoup.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C288023A"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "VegetableSoup" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\VegetableSoup.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"4182C29302E6"
+	    stereotype 	""
+	    language   	"Java")
+	(object module "SoupSpoon" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\SoupSpoon.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CmIdentification"
+		    value      	(value Text ""))
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CopyrightNotice"
+		    value      	(value Text "")))
+	    quid       	"418A23D602CE"
+	    stereotype 	""
+	    visible_modules 	(list dependency_list
+		(object Module_Visibility_Relationship
+		    quid       	"418C0041001B"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::prototype::AbstractSpoon"
+		    quidu      	"418A2446037A"
+		    supplier_is_spec 	TRUE))
+	    language   	"Java")
+	(object module "SaladSpoon" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\SaladSpoon.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CmIdentification"
+		    value      	(value Text ""))
+		(object Attribute
+		    tool       	"Java"
+		    name       	"CopyrightNotice"
+		    value      	(value Text "")))
+	    quid       	"418A23E102FD"
+	    stereotype 	""
+	    visible_modules 	(list dependency_list
+		(object Module_Visibility_Relationship
+		    quid       	"418C000700A7"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::prototype::AbstractSpoon"
+		    quidu      	"418A2446037A"
+		    supplier_is_spec 	TRUE))
+	    language   	"Java")
+	(object module "SaladFork" "NotAModuleType" "NotAModulePart"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Java"
+		    name       	"FileName"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\SaladFork.java")
+		(object Attribute
+		    tool       	"Java"
+		    name       	"RootPath"
+		    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+	    quid       	"418A23EC01B5"
+	    stereotype 	""
+	    language   	"Java")
+	(object SubSystem "teste"
+	    quid       	"4182CFD60006"
+	    visible_modules 	(list dependency_list
+		(object Module_Visibility_Relationship
+		    quid       	"4182D0080073"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns"
+		    quidu      	"4182C16201EC"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"4182D0620370"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::factorymethod"
+		    quidu      	"4182C3F50007"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"41895EC20167"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::abstractfactory"
+		    quidu      	"41895A50034B"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"41895EE700CA"
+		    supplier   	"Component View::java::util"
+		    quidu      	"3FCE4F4E03A6"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"4189687902BE"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::builder"
+		    quidu      	"418961B803A9"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A5137033C"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::prototype"
+		    quidu      	"418A23B902AF"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A679700DA"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::singleton"
+		    quidu      	"418A524F034B"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A6E06031C"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::adapter"
+		    quidu      	"418A68F5004E"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A7BA101A5"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::bridge"
+		    quidu      	"418A6EDB0232"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A81650148"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::composite"
+		    quidu      	"418A7DDB00FA"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A839001B5"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::decorator"
+		    quidu      	"418A833503D8"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A86E9032C"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::facade"
+		    quidu      	"418A860B003E"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A8AA702EE"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::flyweight"
+		    quidu      	"418A89A9009C"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A8F590000"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::proxy"
+		    quidu      	"418A8E51030D"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418A9ED20261"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::chainofresponsibility"
+		    quidu      	"418A9BF7035B"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418AA0970138"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::command"
+		    quidu      	"418A9FA2037A"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418AAD12038A"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::interpreter"
+		    quidu      	"418AA5F10222"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418AB529005D"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::iterator"
+		    quidu      	"418AB41D003D"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418ABC3A0176"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::mediator"
+		    quidu      	"418AB9710157"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418AC01202DD"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::memento"
+		    quidu      	"418ABD24036A"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418B78C0021E"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::observer"
+		    quidu      	"418B6AEC0124"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418B88FC0059"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::state"
+		    quidu      	"418B7A6B002A"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418BAC0302BB"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::strategy"
+		    quidu      	"418B9AC6001B"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418BB0D201FF"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::template"
+		    quidu      	"418BACF803C4"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418BB65B00B7"
+		    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::visitor"
+		    quidu      	"418BB1730173"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418BD6190348"
+		    supplier   	"::proxy::structuralpatterns"
+		    quidu      	"418BD6190309"
+		    supplier_is_subsystem 	TRUE)
+		(object Module_Visibility_Relationship
+		    quid       	"418BD8D401B1"
+		    supplier   	"::iterator::behavorialpatterns"
+		    quidu      	"418BD8D40135"
+		    supplier_is_subsystem 	TRUE))
+	    physical_models 	(list unit_reference_list
+		(object module "TestSoupFactoryMethod" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestSoupFactoryMethod.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+		    quid       	"4182CFFA016D"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BC80600C7"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::SoupBuffet"
+			    quidu      	"4182C27D0121"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BC80600E6"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::factorymethod::SoupFactoryMethod"
+			    quidu      	"4182C438021B"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BC80600E7"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::factorymethod::BostonSoupFactoryMethodSubclass"
+			    quidu      	"4182C4240027"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BC80600F6"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::factorymethod::HonoluluSoupFactoryMethodSubclass"
+			    quidu      	"4182C42D0269"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestAbstractSoupFactory" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestAbstractSoupFactory.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"41895E2B00CA"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BFDB5022E"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::Soup"
+			    quidu      	"4182C16F01FB"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BFDB5023E"
+			    supplier   	"Component View::java::util::Calendar"
+			    quidu      	"3FCE5F660049"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BFDB5024D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::BostonClamChowder"
+			    quidu      	"4182C1AD00C3"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BFDB5025D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::BostonFishChowder"
+			    quidu      	"4182C1BE02E6"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BFDB5025E"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::abstractfactory::BostonConcreteSoupFactory"
+			    quidu      	"418BBBC70134"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BFDB5026D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::abstractfactory::HonoluluConcreteSoupFactory"
+			    quidu      	"418BBBD001E0"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BFDB5027C"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::abstractfactory::AbstractSoupFactory"
+			    quidu      	"418BBAF40182"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestSoupBuffetBuilder" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestSoupBuffetBuilder.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"4189679A02FD"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BC62303E4"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::SoupBuffet"
+			    quidu      	"4182C27D0121"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BC624004A"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::builder::SoupBuffetBuilder"
+			    quidu      	"418961E3009B"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BC624004B"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::builder::BostonSoupBuffetBuilder"
+			    quidu      	"418961C5002E"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BC6240088"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::builder::HonoluluSoupBuffetBuilder"
+			    quidu      	"418BC4C70115"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestPrototype" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestPrototype.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418A50B70196"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BC9D90153"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::prototype::PrototypeFactory"
+			    quidu      	"418A23C800EA"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BC9D901B1"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::SoupSpoon"
+			    quidu      	"418A23D602CE"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BC9D901B2"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::SaladFork"
+			    quidu      	"418A23EC01B5"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BC9D901C1"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::prototype::AbstractFork"
+			    quidu      	"418A2464006D"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BC9D901F0"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::prototype::AbstractSpoon"
+			    quidu      	"418A2446037A"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BC9D901FF"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::SaladSpoon"
+			    quidu      	"418A23E102FD"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestSingleSpoon" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestSingleSpoon.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418A52A6034B"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BCFD8026D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::creationalpatterns::singleton::SingleSpoon"
+			    quidu      	"418A525D03D8"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestTeaBagAdapter" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestTeaBagAdapter.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418A6AF00196"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BC2650115"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::adapter::TeaCup"
+			    quidu      	"418BC1610098"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BC2650182"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::adapter::TeaBall"
+			    quidu      	"418BC15603C4"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BC2650192"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::adapter::LooseLeafTea"
+			    quidu      	"418BC1450347"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BC2860115"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::adapter::TeaBag"
+			    quidu      	"418BC14E0144"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestBridge" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestBridge.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418A711D02BF"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD1870192"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::bridge::SodaImpSingleton"
+			    quidu      	"418A6FDF001F"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD18701A1"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::bridge::SuperSizeSoda"
+			    quidu      	"418A6FEB0242"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD18701A2"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::bridge::MediumSoda"
+			    quidu      	"418A6FA10177"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD18701B1"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::bridge::CherrySodaImp"
+			    quidu      	"418A6F7E0196"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD18701D0"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::bridge::GrapeSodaImp"
+			    quidu      	"418A6F96006D"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD18701D1"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::bridge::OrangeSodaImp"
+			    quidu      	"418A6FAC0290"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestTeaBagsComposite" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestTeaBagsComposite.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418A7E50009C"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD25A021E"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::composite::OneTeaBag"
+			    quidu      	"418A7E7901B5"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD25A022E"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::composite::TeaBags"
+			    quidu      	"418A7E6500CB"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"418BD25A022F"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::composite::TinOfTeaBags"
+			    quidu      	"418A7E850148"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestChaiDecorator" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestChaiDecorator.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418A82B901E4"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BD340023E"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::decorator::ChaiDecorator"
+			    quidu      	"418A833A03B9"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD340026D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::decorator::Tea"
+			    quidu      	"418A834601B5"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD340027C"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::decorator::TeaLeaves"
+			    quidu      	"418A8350034B"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestFacade" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestFacade.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+		    quid       	"418A86A700BB"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BD3EC00C7"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::facade::FacadeCuppaMaker"
+			    quidu      	"418A8616030D"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD3EC00E6"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::facade::FacadeTeaBag"
+			    quidu      	"418A862000DA"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD3EC00F6"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::facade::FacadeTeaCup"
+			    quidu      	"418A862A0000"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD3EC0105"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::facade::FacadeWater"
+			    quidu      	"418A86340232"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestFlyweight" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestFlyweight.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+		    quid       	"418A8A760196"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BD49C0376"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::flyweight::TeaFlavor"
+			    quidu      	"418A8A1C0148"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD49C0386"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::flyweight::TeaFlavorFactory"
+			    quidu      	"418A8A260213"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD49C0395"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::flyweight::TeaOrder"
+			    quidu      	"418A89D400AB"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD49C03A5"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::flyweight::TeaOrderContext"
+			    quidu      	"418A8A310186"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestProxy" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestProxy.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+		    quid       	"418A8F2D00BB"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BD6B70192"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::proxy::PotOfTea"
+			    quidu      	"418A8EFA02DE"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD6B701A1"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::proxy::PotOfTeaInterface"
+			    quidu      	"418A8EAB0196"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD6B701A2"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::structuralpatterns::proxy::PotOfTeaProxy"
+			    quidu      	"418A8EF00138"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestChainOfResponsibility" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestChainOfResponsibility.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418A9C7E003E"
+		    stereotype 	""
+		    language   	"Java")
+		(object module "TestCommand" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestCommand.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+		    quid       	"418AA051003E"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BD78A00C7"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::command::CommandAbstract"
+			    quidu      	"418A9FC0000F"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD78A00C8"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::command::DvdCommandNameStarsOff"
+			    quidu      	"418A9FD60148"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD78A0115"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::command::DvdCommandNameStarsOn"
+			    quidu      	"418A9FCB029F"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD78A0124"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::command::DvdName"
+			    quidu      	"418A9FAF037A"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestDvdInterpreter" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestDvdInterpreter.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418AA69701D4"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BD85003D4"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::interpreter::DvdInterpreterContext"
+			    quidu      	"418AA62501C5"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD85003E4"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::interpreter::TitleAndActor"
+			    quidu      	"418AA63C01A5"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD85003E5"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::interpreter::DvdInterpreterClient"
+			    quidu      	"418AA618003E"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestDvdIterator" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestDvdIterator.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418AB49D02BE"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BD8F60079"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::iterator::DvdList"
+			    quidu      	"418AB47402BE"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD8F60088"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::iterator::DvdListIterator"
+			    quidu      	"418AB46B0137"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestDvdMediator" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestDvdMediator.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418ABA3703B8"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BD9B3024D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::mediator::DvdLowercaseTitle"
+			    quidu      	"418AB9DB008C"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD9B3025D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::mediator::DvdMediator"
+			    quidu      	"418AB9EC02ED"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD9B3025E"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::mediator::DvdTitle"
+			    quidu      	"418AB9F70212"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BD9B3026D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::mediator::DvdUpcaseTitle"
+			    quidu      	"418ABA06032B"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestDvdMemento" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestDvdMemento.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418ABD70002E"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BDA8A02EA"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::memento::DvdDetails"
+			    quidu      	"418ABD83000F"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BDA8A02EB"
+			    supplier   	"Component View::java::util::ArrayList"
+			    quidu      	"3FCE5F4B00B9"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestDvdObserver" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestDvdObserver.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418B6B6A0115"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BDAFE0124"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::observer::DvdRelease"
+			    quidu      	"418B6AF500C7"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BDAFE0125"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::observer::DvdReleaseByCategory"
+			    quidu      	"418B6B0C0163"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BDAFE0134"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::observer::DvdSubscriber"
+			    quidu      	"418B6B000182"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestState" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestState.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418B7ABB0182"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BDB780124"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::state::DvdStateContext"
+			    quidu      	"418B7A6F0347"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestDvdStrategy" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestDvdStrategy.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418B9B7E0386"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BDC2E01D0"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::strategy::DvdNameContext"
+			    quidu      	"418B9B9C01A1"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestTitleInfoTemplate" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestTitleInfoTemplate.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418BAD36020F"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BF0EA026D"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::template::BookTitleInfo"
+			    quidu      	"418BAD030098"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF0EA026E"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::template::DvdTitleInfo"
+			    quidu      	"418BAD0F0309"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF0EA027C"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::template::GameTitleInfo"
+			    quidu      	"418BAD19022E"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF0EA028C"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::template::TitleInfo"
+			    quidu      	"418BAD2401D0"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java")
+		(object module "TestTitleVisitor" "NotAModuleType" "NotAModulePart"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Java"
+			    name       	"FileName"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\teste\\TestTitleVisitor.java")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"RootPath"
+			    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CmIdentification"
+			    value      	(value Text ""))
+			(object Attribute
+			    tool       	"Java"
+			    name       	"CopyrightNotice"
+			    value      	(value Text "")))
+		    quid       	"418BB19200E6"
+		    stereotype 	""
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418BF20D0386"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::visitor::AbstractTitleInfo"
+			    quidu      	"418BB1A2025D"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF20D0395"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::visitor::BookInfo"
+			    quidu      	"418BB1AD0376"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF20D03A5"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::visitor::DvdInfo"
+			    quidu      	"418BB1B800D6"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF20D03A6"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::visitor::GameInfo"
+			    quidu      	"418BB1D20357"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF20D03B5"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::visitor::TitleBlurbVisitor"
+			    quidu      	"418BB1DD00B7"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF20D03C4"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::visitor::TitleLongBlurbVisitor"
+			    quidu      	"418BB1E9020F"
+			    supplier_is_spec 	TRUE)
+			(object Module_Visibility_Relationship
+			    quid       	"418BF20D03D4"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns::behavorialpatterns::visitor::TitleShortBlurbVisitor"
+			    quidu      	"418BB1FD025D"
+			    supplier_is_spec 	TRUE))
+		    language   	"Java"))
+	    physical_presentations 	(list unit_reference_list))
+	(object SubSystem "creationalpatterns"
+	    quid       	"418BBA4E0088"
+	    physical_models 	(list unit_reference_list
+		(object SubSystem "abstractfactory"
+		    quid       	"41895A50034B"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"41895B42008C"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns"
+			    quidu      	"4182C16201EC"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "AbstractSoupFactory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\abstractfactory\\AbstractSoupFactory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BBAF40182"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "BostonConcreteSoupFactory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\abstractfactory\\BostonConcreteSoupFactory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BBBC70134"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    attributes 	(list Attribute_Set)
+				    quid       	"418BBD38023E"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::BostonClamChowder"
+				    quidu      	"4182C1AD00C3"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    attributes 	(list Attribute_Set)
+				    quid       	"418BBD38024D"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::BostonFishChowder"
+				    quidu      	"4182C1BE02E6"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "HonoluluConcreteSoupFactory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\abstractfactory\\HonoluluConcreteSoupFactory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BBBD001E0"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    attributes 	(list Attribute_Set)
+				    quid       	"418BBD6301B1"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::HonoluluClamChowder"
+				    quidu      	"4182C24F03E0"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    attributes 	(list Attribute_Set)
+				    quid       	"418BBD63023E"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::HonoluluFishChowder"
+				    quidu      	"4182C25A02F5"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "builder"
+		    quid       	"418961B803A9"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418962A4036A"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns"
+			    quidu      	"4182C16201EC"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "BostonSoupBuffetBuilder" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\builder\\BostonSoupBuffetBuilder.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418961C5002E"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    attributes 	(list Attribute_Set)
+				    quid       	"4189656400F9"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::BostonClamChowder"
+				    quidu      	"4182C1AD00C3"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    attributes 	(list Attribute_Set)
+				    quid       	"4189656400FA"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::BostonFishChowder"
+				    quidu      	"4182C1BE02E6"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "SoupBuffetBuilder" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\builder\\SoupBuffetBuilder.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418961E3009B"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"4189671F006D"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::SoupBuffet"
+				    quidu      	"4182C27D0121"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4189671F006E"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::ChickenSoup"
+				    quidu      	"4182C1CB0353"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4189671F007C"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::ClamChowder"
+				    quidu      	"4182C2390353"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4189671F007D"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::FishChowder"
+				    quidu      	"4182C2460094"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4189671F008C"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::Minnestrone"
+				    quidu      	"4182C26600F2"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4189671F008D"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::PastaFazoule"
+				    quidu      	"4182C272016F"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4189671F009B"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::TofuSoup"
+				    quidu      	"4182C288023A"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4189671F00AB"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::VegetableSoup"
+				    quidu      	"4182C29302E6"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "HonoluluSoupBuffetBuilder" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\builder\\HonoluluSoupBuffetBuilder.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BC4C70115"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418BC586023E"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::HonoluluClamChowder"
+				    quidu      	"4182C24F03E0"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418BC586025D"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::HonoluluFishChowder"
+				    quidu      	"4182C25A02F5"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "factorymethod"
+		    quid       	"4182C3F50007"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"4182C50D0353"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns"
+			    quidu      	"4182C16201EC"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "BostonSoupFactoryMethodSubclass" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\factorymethod\\BostonSoupFactoryMethodSubclass.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"4182C4240027"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"4182C8FB00BD"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::ClamChowder"
+				    quidu      	"4182C2390353"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C8FB00CD"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::FishChowder"
+				    quidu      	"4182C2460094"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C8FB00CE"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::BostonClamChowder"
+				    quidu      	"4182C1AD00C3"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C8FB00DD"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::BostonFishChowder"
+				    quidu      	"4182C1BE02E6"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "HonoluluSoupFactoryMethodSubclass" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\factorymethod\\HonoluluSoupFactoryMethodSubclass.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"4182C42D0269"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"4182CC200377"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::ClamChowder"
+				    quidu      	"4182C2390353"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182CC2003C5"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::FishChowder"
+				    quidu      	"4182C2460094"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182CC21002B"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::HonoluluClamChowder"
+				    quidu      	"4182C24F03E0"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182CC21005A"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::HonoluluFishChowder"
+				    quidu      	"4182C25A02F5"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "SoupFactoryMethod" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\factorymethod\\SoupFactoryMethod.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"4182C438021B"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"4182C7740331"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::SoupBuffet"
+				    quidu      	"4182C27D0121"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C7740332"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::ChickenSoup"
+				    quidu      	"4182C1CB0353"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C7740340"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::ClamChowder"
+				    quidu      	"4182C2390353"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C7740341"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::FishChowder"
+				    quidu      	"4182C2460094"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C7740342"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::PastaFazoule"
+				    quidu      	"4182C272016F"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C7740350"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::TofuSoup"
+				    quidu      	"4182C288023A"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C7740360"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::VegetableSoup"
+				    quidu      	"4182C29302E6"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"4182C7740361"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::Minnestrone"
+				    quidu      	"4182C26600F2"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "prototype"
+		    quid       	"418A23B902AF"
+		    physical_models 	(list unit_reference_list
+			(object module "PrototypeFactory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\prototype\\PrototypeFactory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A23C800EA"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "AbstractSpoon" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\prototype\\AbstractSpoon.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A2446037A"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "AbstractFork" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\prototype\\AbstractFork.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A2464006D"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "singleton"
+		    quid       	"418A524F034B"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418A535A0280"
+			    supplier   	"Component View::br::gov::fnde::desingpatterns"
+			    quidu      	"4182C16201EC"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "SingleSpoon" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\creationalpatterns\\singleton\\SingleSpoon.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A525D03D8"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418A53A70177"
+				    supplier   	"Component View::br::gov::fnde::desingpatterns::Soup"
+				    quidu      	"4182C16F01FB"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list)))
+	    physical_presentations 	(list unit_reference_list))
+	(object SubSystem "structuralpatterns"
+	    quid       	"418BBEEF00A7"
+	    physical_models 	(list unit_reference_list
+		(object SubSystem "adapter"
+		    quid       	"418A68F5004E"
+		    physical_models 	(list unit_reference_list
+			(object module "LooseLeafTea" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\adapter\\LooseLeafTea.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BC1450347"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TeaBag" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\adapter\\TeaBag.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BC14E0144"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TeaBall" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\adapter\\TeaBall.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BC15603C4"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TeaCup" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\adapter\\TeaCup.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BC1610098"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "bridge"
+		    quid       	"418A6EDB0232"
+		    physical_models 	(list unit_reference_list
+			(object module "CherrySodaImp" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\bridge\\CherrySodaImp.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A6F7E0196"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "GrapeSodaImp" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\bridge\\GrapeSodaImp.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A6F96006D"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "MediumSoda" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\bridge\\MediumSoda.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A6FA10177"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "OrangeSodaImp" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\bridge\\OrangeSodaImp.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A6FAC0290"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "Soda" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\bridge\\Soda.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A6FB701C5"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "SodaImp" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\bridge\\SodaImp.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A6FC9001F"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "SodaImpSingleton" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\bridge\\SodaImpSingleton.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A6FDF001F"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "SuperSizeSoda" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\bridge\\SuperSizeSoda.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A6FEB0242"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "composite"
+		    quid       	"418A7DDB00FA"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418A7F2D034B"
+			    supplier   	"Component View::java::util"
+			    quidu      	"3FCE4F4E03A6"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "TeaBags" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\composite\\TeaBags.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A7E6500CB"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418A7FA700EA"
+				    supplier   	"Component View::java::util::LinkedList"
+				    quidu      	"3FCE610C02C0"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418A7FA700EB"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "OneTeaBag" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\composite\\OneTeaBag.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A7E7901B5"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418A80630148"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "TinOfTeaBags" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\composite\\TinOfTeaBags.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A7E850148"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418A810F00FA"
+				    supplier   	"Component View::java::util::LinkedList"
+				    quidu      	"3FCE610C02C0"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418A810F0138"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "decorator"
+		    quid       	"418A833503D8"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418A84A302DE"
+			    supplier   	"Component View::java::util"
+			    quidu      	"3FCE4F4E03A6"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "ChaiDecorator" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\decorator\\ChaiDecorator.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A833A03B9"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418A84DB01C5"
+				    supplier   	"Component View::java::util::ArrayList"
+				    quidu      	"3FCE5F4B00B9"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418A84DB01C6"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "Tea" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\decorator\\Tea.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A834601B5"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TeaLeaves" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\decorator\\TeaLeaves.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A8350034B"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "facade"
+		    quid       	"418A860B003E"
+		    physical_models 	(list unit_reference_list
+			(object module "FacadeCuppaMaker" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\facade\\FacadeCuppaMaker.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A8616030D"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "FacadeTeaBag" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\facade\\FacadeTeaBag.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418A862000DA"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "FacadeTeaCup" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\facade\\FacadeTeaCup.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A862A0000"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "FacadeWater" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\facade\\FacadeWater.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A86340232"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "flyweight"
+		    quid       	"418A89A9009C"
+		    physical_models 	(list unit_reference_list
+			(object module "TeaOrder" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\flyweight\\TeaOrder.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A89D400AB"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TeaFlavor" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\flyweight\\TeaFlavor.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A8A1C0148"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TeaFlavorFactory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\flyweight\\TeaFlavorFactory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A8A260213"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TeaOrderContext" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\flyweight\\TeaOrderContext.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A8A310186"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "proxy"
+		    quid       	"418A8E51030D"
+		    physical_models 	(list unit_reference_list
+			(object module "PotOfTeaInterface" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\proxy\\PotOfTeaInterface.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A8EAB0196"
+			    stereotype 	""
+			    realized_interfaces 	(list realize_rel_list
+				(object Realize_Relationship
+				    quid       	"418BD4FE020F"
+				    supplier   	"Logical View::Sistemas::DesignPatterns::StructuralPatterns::Proxy::PotOfTeaInterface"
+				    quidu      	"418A8E9B0119"))
+			    language   	"Java")
+			(object module "PotOfTeaProxy" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\proxy\\PotOfTeaProxy.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A8EF00138"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "PotOfTea" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\structuralpatterns\\proxy\\PotOfTea.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A8EFA02DE"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list)))
+	    physical_presentations 	(list unit_reference_list))
+	(object SubSystem "behavorialpatterns"
+	    quid       	"418BBF500124"
+	    physical_models 	(list unit_reference_list
+		(object SubSystem "chainofresponsibility"
+		    quid       	"418A9BF7035B"
+		    physical_models 	(list unit_reference_list
+			(object module "DvdCategory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\chainofresponsibility\\DvdCategory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BBFF10328"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdSubCategory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\chainofresponsibility\\DvdSubCategory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BC0730144"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdSubSubCategory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\chainofresponsibility\\DvdSubSubCategory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BC07D02BB"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TopTitle" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\chainofresponsibility\\TopTitle.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes"))
+			    quid       	"418BC08603A5"
+			    stereotype 	""
+			    realized_interfaces 	(list realize_rel_list
+				(object Realize_Relationship
+				    quid       	"418BC09C0144"
+				    supplier   	"Logical View::Sistemas::DesignPatterns::BehavorialPatterns::ChainOfResponsibility::TopTitle"
+				    quidu      	"418A9CD303C8"))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "command"
+		    quid       	"418A9FA2037A"
+		    physical_models 	(list unit_reference_list
+			(object module "DvdName" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\command\\DvdName.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A9FAF037A"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "CommandAbstract" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\command\\CommandAbstract.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A9FC0000F"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdCommandNameStarsOn" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\command\\DvdCommandNameStarsOn.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A9FCB029F"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdCommandNameStarsOff" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\command\\DvdCommandNameStarsOff.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418A9FD60148"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "interpreter"
+		    quid       	"418AA5F10222"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418AA7260000"
+			    supplier   	"Component View::java::util"
+			    quidu      	"3FCE4F4E03A6"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "DvdAbstractExpression" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\interpreter\\DvdAbstractExpression.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AA5F80242"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdActorExpression" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\interpreter\\DvdActorExpression.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AA60301C5"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418AAF7C03A8"
+				    supplier   	"Component View::java::util::ArrayList"
+				    quidu      	"3FCE5F4B00B9"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418AAF7D003D"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "DvdActorTitleExpression" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\interpreter\\DvdActorTitleExpression.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AA60E00FA"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418AAFB100DA"
+				    supplier   	"Component View::java::util::ArrayList"
+				    quidu      	"3FCE5F4B00B9"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418AAFB100E9"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "DvdInterpreterClient" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\interpreter\\DvdInterpreterClient.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AA618003E"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418AAEC7007C"
+				    supplier   	"Component View::java::util::StringTokenizer"
+				    quidu      	"3FCE63850198"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "DvdInterpreterContext" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\interpreter\\DvdInterpreterContext.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AA62501C5"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418AAF0902FD"
+				    supplier   	"Component View::java::util::ArrayList"
+				    quidu      	"3FCE5F4B00B9"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418AAF0902FE"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "DvdTitleActorExpression" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\interpreter\\DvdTitleActorExpression.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AA62E035B"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418AB01603C8"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418AB017007C"
+				    supplier   	"Component View::java::util::ArrayList"
+				    quidu      	"3FCE5F4B00B9"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java")
+			(object module "TitleAndActor" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\interpreter\\TitleAndActor.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AA63C01A5"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdTitleExpression" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\interpreter\\DvdTitleExpression.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AA6480167"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418AAFEC01A5"
+				    supplier   	"Component View::java::util::ArrayList"
+				    quidu      	"3FCE5F4B00B9"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418AAFEC01B4"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "iterator"
+		    quid       	"418AB41D003D"
+		    physical_models 	(list unit_reference_list
+			(object module "DvdListIterator" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\iterator\\DvdListIterator.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AB46B0137"
+			    stereotype 	""
+			    realized_interfaces 	(list realize_rel_list
+				(object Realize_Relationship
+				    quid       	"418AB58B02DD"
+				    supplier   	"Logical View::Sistemas::DesignPatterns::BehavorialPatterns::Iterator::DvdListIterator"
+				    quidu      	"418AB56E003D"))
+			    language   	"Java")
+			(object module "DvdList" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\iterator\\DvdList.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AB47402BE"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "mediator"
+		    quid       	"418AB9710157"
+		    physical_models 	(list unit_reference_list
+			(object module "DvdLowercaseTitle" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\mediator\\DvdLowercaseTitle.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AB9DB008C"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdMediator" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\mediator\\DvdMediator.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AB9EC02ED"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdTitle" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\mediator\\DvdTitle.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418AB9F70212"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdUpcaseTitle" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\mediator\\DvdUpcaseTitle.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418ABA06032B"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "memento"
+		    quid       	"418ABD24036A"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418ABDD3037A"
+			    supplier   	"Component View::java::util"
+			    quidu      	"3FCE4F4E03A6"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "DvdDetails" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\memento\\DvdDetails.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418ABD83000F"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418ABEDC03E7"
+				    supplier   	"Component View::java::util::ArrayList"
+				    quidu      	"3FCE5F4B00B9"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418ABEDD000F"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "observer"
+		    quid       	"418B6AEC0124"
+		    visible_modules 	(list dependency_list
+			(object Module_Visibility_Relationship
+			    quid       	"418B6BF7001B"
+			    supplier   	"Component View::java::util"
+			    quidu      	"3FCE4F4E03A6"
+			    supplier_is_subsystem 	TRUE))
+		    physical_models 	(list unit_reference_list
+			(object module "DvdRelease" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\observer\\DvdRelease.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B6AF500C7"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdSubscriber" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\observer\\DvdSubscriber.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B6B000182"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdReleaseByCategory" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\observer\\DvdReleaseByCategory.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B6B0C0163"
+			    stereotype 	""
+			    visible_modules 	(list dependency_list
+				(object Module_Visibility_Relationship
+				    quid       	"418B77510134"
+				    supplier   	"Component View::java::util::ArrayList"
+				    quidu      	"3FCE5F4B00B9"
+				    supplier_is_spec 	TRUE)
+				(object Module_Visibility_Relationship
+				    quid       	"418B77510135"
+				    supplier   	"Component View::java::util::ListIterator"
+				    quidu      	"3FCE5F390367"
+				    supplier_is_spec 	TRUE))
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "state"
+		    quid       	"418B7A6B002A"
+		    physical_models 	(list unit_reference_list
+			(object module "DvdStateContext" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\state\\DvdStateContext.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B7A6F0347"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdStateName" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\state\\DvdStateName.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B7A7A01A1"
+			    stereotype 	""
+			    realized_interfaces 	(list realize_rel_list
+				(object Realize_Relationship
+				    quid       	"418B7D9B004A"
+				    supplier   	"Logical View::Sistemas::DesignPatterns::BehavorialPatterns::State::DvdStateName"
+				    quidu      	"418B7D8A0338"))
+			    language   	"Java")
+			(object module "DvdStateNameExclaim" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\state\\DvdStateNameExclaim.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B7A83003A"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdStateNameStars" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\state\\DvdStateNameStars.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B7A8E01C1"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "strategy"
+		    quid       	"418B9AC6001B"
+		    physical_models 	(list unit_reference_list
+			(object module "DvdNameAllCapStrategy" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\strategy\\DvdNameAllCapStrategy.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B9B92026D"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdNameContext" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\strategy\\DvdNameContext.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B9B9C01A1"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdNameReplaceSpacesStrategy" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\strategy\\DvdNameReplaceSpacesStrategy.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B9BA90144"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdNameStrategy" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\strategy\\DvdNameStrategy.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B9BB40153"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdNameTheAtEndStrategy" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\strategy\\DvdNameTheAtEndStrategy.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418B9BBD0338"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "template"
+		    quid       	"418BACF803C4"
+		    physical_models 	(list unit_reference_list
+			(object module "BookTitleInfo" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\template\\BookTitleInfo.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BAD030098"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdTitleInfo" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\template\\DvdTitleInfo.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BAD0F0309"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "GameTitleInfo" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\template\\GameTitleInfo.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BAD19022E"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TitleInfo" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\template\\TitleInfo.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BAD2401D0"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list))
+		(object SubSystem "visitor"
+		    quid       	"418BB1730173"
+		    physical_models 	(list unit_reference_list
+			(object module "AbstractTitleInfo" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\visitor\\AbstractTitleInfo.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BB1A2025D"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "BookInfo" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\visitor\\BookInfo.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BB1AD0376"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "DvdInfo" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\visitor\\DvdInfo.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BB1B800D6"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "GameInfo" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\visitor\\GameInfo.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BB1D20357"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TitleBlurbVisitor" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\visitor\\TitleBlurbVisitor.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BB1DD00B7"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TitleLongBlurbVisitor" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\visitor\\TitleLongBlurbVisitor.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BB1E9020F"
+			    stereotype 	""
+			    language   	"Java")
+			(object module "TitleShortBlurbVisitor" "NotAModuleType" "NotAModulePart"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Java"
+				    name       	"FileName"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes\\br\\gov\\fnde\\desingpatterns\\behavorialpatterns\\visitor\\TitleShortBlurbVisitor.java")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"RootPath"
+				    value      	"$ProjetoFNDE\\SISTEMAS\\DesignPatterns\\fontes")
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CmIdentification"
+				    value      	(value Text ""))
+				(object Attribute
+				    tool       	"Java"
+				    name       	"CopyrightNotice"
+				    value      	(value Text "")))
+			    quid       	"418BB1FD025D"
+			    stereotype 	""
+			    language   	"Java"))
+		    physical_presentations 	(list unit_reference_list)))
+	    physical_presentations 	(list unit_reference_list)))
+    physical_presentations 	(list unit_reference_list))

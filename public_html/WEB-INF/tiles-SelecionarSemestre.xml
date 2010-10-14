@@ -1,0 +1,17 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config.dtd">
+
+<tiles-definitions>
+
+    <definition name="SelecionarSemestre" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/selecionarsemestre/SelecionarSemestre.jsp"/>
+    </definition>
+
+    <definition name="DemonstrativoDivergencia" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/selecionarsemestre/DemonstrativoDivergencias.jsp"/>
+    </definition>
+
+</tiles-definitions>

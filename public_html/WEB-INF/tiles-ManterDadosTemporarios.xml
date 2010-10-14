@@ -1,0 +1,27 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config.dtd">
+
+<tiles-definitions>
+
+    <definition name="ListaAlunoTemporario" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/manterdadostemporarios/ListaAlunoTemporario.jsp"/>
+    </definition>
+
+    <definition name="IdentificacaoAlunoTemporario" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/manterdadostemporarios/IdentificacaoAlunoTemporario.jsp"/>
+    </definition>
+
+    <definition name="IdentificacaoEscolaTemporario" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/manterdadostemporarios/IdentificacaoEscolaTemporario.jsp"/>
+    </definition>
+
+    <definition name="ImportaDadosTemporario" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>     
+        <put name="content" value="/manterdadostemporarios/ImportaDadosTemporario.jsp"/>
+    </definition>
+
+</tiles-definitions>

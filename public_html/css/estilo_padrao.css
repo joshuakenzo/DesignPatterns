@@ -1,0 +1,207 @@
+.tabela{
+	overflow-y:no; 
+    height=200; 
+    width=70%; 
+    text-align:left; 
+    SCROLLBAR-FACE-COLOR: #006699; 
+    SCROLLBAR-HIGHLIGHT-COLOR: #006699; 
+    SCROLLBAR-SHADOW-COLOR: #006699; COLOR: rgb(0,0,0); 
+    SCROLLBAR-3DLIGHT-COLOR: #b9daec; 
+    SCROLLBAR-ARROW-COLOR: #F1DB9F; 
+    SCROLLBAR-TRACK-COLOR: #F1DB9F; 
+    SCROLLBAR-DARKSHADOW-COLOR: #006699; 
+    border-bottom: #000000 1px solid; 
+    
+	}
+
+
+TD {
+	FONT-SIZE: 11px; FONT-FAMILY: tahoma,sans-serif
+}
+a{
+	COLOR: #000099; TEXT-DECORATION: none
+}
+a:hover {
+	COLOR: #000099; TEXT-DECORATION: underline
+}
+
+
+.classTD{
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+		
+}
+
+.classTable {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}
+
+.botao {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #006699; FONT-FAMILY: Tahoma,Helvetica, sans-serif; BACKGROUND-COLOR: #F7DE9C; border: #000000 1px solid;
+}
+.link_texto_branco {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Arial,MS Sans Serif; TEXT-DECORATION: none
+}
+.link_texto_branco:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: Arial,MS Sans Serif; TEXT-DECORATION: none
+}
+.link_texto_branco:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #f1db9f; FONT-FAMILY: Arial,MS Sans Serif; TEXT-DECORATION: none
+}
+.botao_login {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; Z-INDEX: 2; CURSOR: hand; COLOR: #000000; LINE-HEIGHT: 0.85; PADDING-TOP: 2px; FONT-FAMILY: Verdana,Tahoma,Arial,MS Sans Serif
+}
+.campo_texto {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333399; FONT-FAMILY: Tahoma,Helvetica, sans-serif;BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; COLOR: #666666; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #f3f8fe
+}
+.fundo_azul {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Tahoma,Arial,Helvetica,MS Sans Serif; BACKGROUND-COLOR: #006699
+}
+.fundo_azul_claro {
+	BACKGROUND-COLOR: #b6d2e7
+}
+
+.cabecalho_fundo {
+	BACKGROUND-COLOR: #f1db9f
+}
+.fundo_branco {
+	BACKGROUND-COLOR: #ffffff
+}
+
+.fundo_laranja {
+	BACKGROUND-COLOR: #f1db9f
+}
+.fundo_laranja_pastel{
+	 BACKGROUND-COLOR: #F7DE9C;
+}
+.fundo_transparente {
+	BACKGROUND: none transparent;
+}
+
+.letras_azul_bold_pequena {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #09548d; FONT-STYLE: normal; FONT-FAMILY: Verdana,Tahoma,Arial,Helvetica,MS Sans Serif; TEXT-DECORATION: none
+}
+
+.letras_azul_bold_sub {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #09548d; FONT-FAMILY: Verdana,Tahoma,Arial,Helvetica,MS Sans Serif; TEXT-DECORATION: underline
+}
+
+.cabecalho_letras {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #09548d; FONT-FAMILY: Verdana,Tahoma,Arial,Helvetica,MS Sans Serif; TEXT-DECORATION: none
+}
+
+.letras_branco_bold_fundo_azul {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana,Tahoma,Arial,Helvetica,MS Sans Serif; BACKGROUND-COLOR: #006699; TEXT-DECORATION: none
+}
+
+.letras_pretas {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana,Tahoma,Arial,Helvetica,MS Sans Serif; TEXT-DECORATION: none
+}
+
+.letras_pretas_bold {
+	FONT-SIZE: 20px; COLOR: #000000; FONT-FAMILY: Tahoma,Arial,Helvetica; TEXT-DECORATION: none
+}
+
+.cabecalho_letras {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #09548d; FONT-FAMILY: Verdana,Tahoma,Arial,Helvetica,MS Sans Serif;TEXT-DECORATION: none
+}
+
+.pagina_titulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #000099;
+}
+
+.texto_vermelho {
+	FONT-SIZE: 11px; COLOR: #990000; FONT-FAMILY: Arial, Helvetica, sans-serif; line-height:10px;
+}
+
+.texto_normal {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+.titulo_campo_texto {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333399; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #f0f0f0
+}
+
+.titulo_tela_processual {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #006699; FONT-FAMILY: Tahoma,Helvetica, sans-serif;
+}
+
+.link_esquerda {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #006699; FONT-FAMILY: Tahoma,Helvetica, sans-serif; border: #000000 0px none; width: 114px; padding-left:0px;text-align: left;TEXT-DECORATION: none;
+}
+.link_direita {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #006699; FONT-FAMILY: Tahoma,Helvetica, sans-serif; border: #000000 0px none; width: 114px; padding-right:0px; text-align: right;TEXT-DECORATION: none;
+}
+
+.link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #006699; FONT-FAMILY: Tahoma,Helvetica, sans-serif; border: #000000 0px none; TEXT-DECORATION: none;
+}
+.link:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #003871; FONT-FAMILY: Tahoma,Helvetica, sans-serif; border: #000000 0px none; TEXT-DECORATION: none;
+}
+
+
+.fichario_titulo_link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #006699; FONT-FAMILY: Tahoma,Helvetica, sans-serif; BACKGROUND-COLOR: #F7DE9C; border: #000000 0px none; TEXT-DECORATION: none;
+}
+.fichario_titulo_fundo_selecionado {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #FFFFFF; FONT-FAMILY: Tahoma,Helvetica, sans-serif; BACKGROUND-COLOR: #F7DE9C; border: #000000 0px none; width: 111px; padding-left:10px;
+}
+.fichario_titulo_link_selecionado {
+FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #FFFFFF; FONT-FAMILY: Tahoma,Helvetica, sans-serif; BACKGROUND-COLOR: #30309F; border: #000000 0px none; TEXT-DECORATION: none;
+
+}
+.fichario_titulo_link {
+FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #006699; FONT-FAMILY: Tahoma,Helvetica, sans-serif; BACKGROUND-COLOR: #F7DE9C; border: #000000 0px none; width: 111px; padding-left:10px;
+}
+
+.titulo_tabela {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 11px; 
+	COLOR: #ffffff; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	BACKGROUND-COLOR: #333399; 
+	border-right: 1px solid #000000;
+}
+
+<!--Começo - Tags css para o funcionamento das tags de Apresentação - Equipe de Objetos-->
+.titulotelaprocessual {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #006699; FONT-FAMILY: Tahoma,Helvetica, sans-serif;
+}
+.TituloCampoForm {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333399; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #f0f0f0
+}
+.titulo_form{
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	BACKGROUND-COLOR: #333399; padding-left:5px;
+}
+<!--Fim - Tags css para o funcionamento das tags de Apresentação - Equipe de Objetos-->
+
+
+
+
+
+
+
+

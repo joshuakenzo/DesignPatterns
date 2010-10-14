@@ -1,0 +1,17 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config.dtd">
+
+<tiles-definitions>
+
+    <definition name="LocalizarContribuinte" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/localizarcontribuinte/LocalizarContribuinte.jsp"/>
+    </definition>
+
+    <definition name="TelaInicial" extends="processualLayout">
+        <put name="titleKey" value="aplicacao.title"/>
+        <put name="content" value="/IndexBody.jsp"/>
+    </definition>
+
+</tiles-definitions>

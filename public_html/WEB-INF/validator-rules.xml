@@ -1,0 +1,1154 @@
+<!--
+
+   This file contains the default Struts Validator pluggable validator
+   definitions.  It should be placed somewhere under /WEB-INF and
+   referenced in the struts-config.xml under the plug-in element
+   for the ValidatorPlugIn.
+
+      <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,
+                                                  /WEB-INF/validation.xml"/>
+      </plug-in>
+
+   These are the default error messages associated with
+   each validator defined in this file.  They should be
+   added to your projects ApplicationResources.properties
+   file or you can associate new ones by modifying the
+   pluggable validators msg attributes in this file.
+
+   # Struts Validator Error Messages
+   errors.required={0} is required.
+   errors.minlength={0} can not be less than {1} characters.
+   errors.maxlength={0} can not be greater than {1} characters.
+   errors.invalid={0} is invalid.
+
+   errors.byte={0} must be an byte.
+   errors.short={0} must be an short.
+   errors.integer={0} must be an integer.
+   errors.long={0} must be an long.
+   errors.float={0} must be an float.
+   errors.double={0} must be an double.
+
+   errors.date={0} is not a date.
+   errors.range={0} is not in the range {1} through {2}.
+   errors.creditcard={0} is not a valid credit card number.
+   errors.email={0} is an invalid e-mail address.
+
+-->
+
+<form-validation>
+
+   <global>
+
+      <validator name="required"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateRequired"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="errors.required">
+
+         <javascript><![CDATA[
+            function validateRequired(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oRequired = new required();
+                for (x in oRequired) {
+                    if ((form[oRequired[x][0]].type == 'text' ||
+                         form[oRequired[x][0]].type == 'textarea' ||
+                         form[oRequired[x][0]].type == 'select-one' ||
+                         form[oRequired[x][0]].type == 'radio' ||
+                         form[oRequired[x][0]].type == 'password') &&
+                        (form[oRequired[x][0]].value == '')) {
+                        if (i == 0) {
+                            focusField = form[oRequired[x][0]];
+                        }
+                        fields[i++] = oRequired[x][1];
+                        bValid = false;
+                    }
+                }
+                if (fields.length > 0) {
+                   focusField.focus();
+                   alert(fields.join('\n'));
+                }
+                return bValid;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="minlength"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateMinLength"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.minlength">
+
+         <javascript><![CDATA[
+            function validateMinLength(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oMinLength = new minlength();
+                for (x in oMinLength) {
+                    if (form[oMinLength[x][0]].type == 'text' ||
+                        form[oMinLength[x][0]].type == 'textarea') {
+                        var iMin = parseInt(oMinLength[x][2]("minlength"));
+                        if (!(form[oMinLength[x][0]].value.length >= iMin)) {
+                            if (i == 0) {
+                                focusField = form[oMinLength[x][0]];
+                            }
+                            fields[i++] = oMinLength[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                   focusField.focus();
+                   alert(fields.join('\n'));
+                }
+                return bValid;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="maxlength"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateMaxLength"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.maxlength">
+
+         <javascript><![CDATA[
+            function validateMaxLength(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oMaxLength = new maxlength();
+                for (x in oMaxLength) {
+                    if (form[oMaxLength[x][0]].type == 'text' ||
+                        form[oMaxLength[x][0]].type == 'textarea') {
+                        var iMax = parseInt(oMaxLength[x][2]("maxlength"));
+                        if (!(form[oMaxLength[x][0]].value.length <= iMax)) {
+                            if (i == 0) {
+                                focusField = form[oMaxLength[x][0]];
+                            }
+                            fields[i++] = oMaxLength[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                   focusField.focus();
+                   alert(fields.join('\n'));
+                }
+                return bValid;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="mask"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateMask"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.invalid">
+
+         <javascript><![CDATA[
+            function validateMask(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oMasked = new mask();
+                for (x in oMasked) {
+                    if ((form[oMasked[x][0]].type == 'text' ||
+                         form[oMasked[x][0]].type == 'textarea' ||
+                         form[oMasked[x][0]].type == 'password') &&
+                        (form[oMasked[x][0]].value.length > 0)) {
+                        if (!matchPattern(form[oMasked[x][0]].value, oMasked[x][2]("mask"))) {
+                            if (i == 0) {
+                                focusField = form[oMasked[x][0]];
+                            }
+                            fields[i++] = oMasked[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                   focusField.focus();
+                   alert(fields.join('\n'));
+                }
+                return bValid;
+            }
+
+            function matchPattern(value, mask) {
+               var bMatched = mask.exec(value);
+               if (!bMatched) {
+                   return false;
+               }
+               return true;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="byte"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateByte"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.byte"
+       jsFunctionName="ByteValidations">
+
+         <javascript><![CDATA[
+            function validateByte(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oByte = new ByteValidations();
+                for (x in oByte) {
+                    if ((form[oByte[x][0]].type == 'text' ||
+                         form[oByte[x][0]].type == 'textarea' ||
+                         form[oByte[x][0]].type == 'select-one' ||
+                         form[oByte[x][0]].type == 'radio') &&
+                        (form[oByte[x][0]].value.length > 0)) {
+                        var iValue = parseInt(form[oByte[x][0]].value);
+                        if (isNaN(iValue) || !(iValue >= -128 && iValue <= 127)) {
+                            if (i == 0)
+                                focusField = form[oByte[x][0]];
+                            fields[i++] = oByte[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                   focusField.focus();
+                   alert(fields.join('\n'));
+                }
+                return bValid;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="short"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateShort"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.short"
+       jsFunctionName="ShortValidations">
+
+         <javascript><![CDATA[
+            function validateShort(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oShort = new ShortValidations();
+                for (x in oShort) {
+                    if ((form[oShort[x][0]].type == 'text' ||
+                         form[oShort[x][0]].type == 'textarea' ||
+                         form[oShort[x][0]].type == 'select-one' ||
+                         form[oShort[x][0]].type == 'radio') &&
+                        (form[oShort[x][0]].value.length > 0)) {
+                        var iValue = parseInt(form[oShort[x][0]].value);
+                        if (isNaN(iValue) || !(iValue >= -32768 && iValue <= 32767)) {
+                            if (i == 0) {
+                                focusField = form[oShort[x][0]];
+                            }
+                            fields[i++] = oShort[x][1];
+                            bValid = false;
+                       }
+                    }
+                }
+                if (fields.length > 0) {
+                   focusField.focus();
+                   alert(fields.join('\n'));
+                }
+                return bValid;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="integer"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateInteger"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.integer"
+       jsFunctionName="IntegerValidations">
+
+         <javascript><![CDATA[
+            function validateInteger(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oInteger = new IntegerValidations();
+                for (x in oInteger) {
+                    if ((form[oInteger[x][0]].type == 'text' ||
+                         form[oInteger[x][0]].type == 'textarea' ||
+                         form[oInteger[x][0]].type == 'select-one' ||
+                         form[oInteger[x][0]].type == 'radio') &&
+                        (form[oInteger[x][0]].value.length > 0)) {
+                        var iValue = parseInt(form[oInteger[x][0]].value);
+                        if (isNaN(iValue) || !(iValue >= -2147483648 && iValue <= 2147483647)) {
+                            if (i == 0) {
+                                focusField = form[oInteger[x][0]];
+                            }
+                            fields[i++] = oInteger[x][1];
+                            bValid = false;
+                       }
+                    }
+                }
+                if (fields.length > 0) {
+                   focusField.focus();
+                   alert(fields.join('\n'));
+                }
+                return bValid;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="long"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateLong"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.long"/>
+
+
+      <validator name="float"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateFloat"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.float"
+       jsFunctionName="FloatValidations">
+
+         <javascript><![CDATA[
+            function validateFloat(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oFloat = new FloatValidations();
+                for (x in oFloat) {
+                    if ((form[oFloat[x][0]].type == 'text' ||
+                         form[oFloat[x][0]].type == 'textarea' ||
+                         form[oFloat[x][0]].type == 'select-one' ||
+                         form[oFloat[x][0]].type == 'radio') &&
+                        (form[oFloat[x][0]].value.length > 0)) {
+                        var iValue = parseFloat(form[oFloat[x][0]].value);
+                        if (isNaN(iValue)) {
+                            if (i == 0) {
+                                focusField = form[oFloat[x][0]];
+                            }
+                            fields[i++] = oFloat[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                   focusField.focus();
+                   alert(fields.join('\n'));
+                }
+                return bValid;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="double"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateDouble"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.double"/>
+
+
+      <validator name="date"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateDate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="errors.date"
+       jsFunctionName="DateValidations">
+
+         <javascript><![CDATA[
+            function validateDate(form) {
+               var bValid = true;
+               var focusField = null;
+               var i = 0;
+               var fields = new Array();
+               oDate = new DateValidations();
+               for (x in oDate) {
+                   var value = form[oDate[x][0]].value;
+                   var datePattern = oDate[x][2]("datePatternStrict");
+                   if ((form[oDate[x][0]].type == 'text' ||
+                        form[oDate[x][0]].type == 'textarea') &&
+                       (value.length > 0) &&
+                       (datePattern.length > 0)) {
+                     var MONTH = "MM";
+                     var DAY = "dd";
+                     var YEAR = "yyyy";
+                     var orderMonth = datePattern.indexOf(MONTH);
+                     var orderDay = datePattern.indexOf(DAY);
+                     var orderYear = datePattern.indexOf(YEAR);
+                     if ((orderDay < orderYear && orderDay > orderMonth)) {
+                         var iDelim1 = orderMonth + MONTH.length;
+                         var iDelim2 = orderDay + DAY.length;
+                         var delim1 = datePattern.substring(iDelim1, iDelim1 + 1);
+                         var delim2 = datePattern.substring(iDelim2, iDelim2 + 1);
+                         if (iDelim1 == orderDay && iDelim2 == orderYear) {
+                            dateRegexp = new RegExp("^(\\d{2})(\\d{2})(\\d{4})$");
+                         } else if (iDelim1 == orderDay) {
+                            dateRegexp = new RegExp("^(\\d{2})(\\d{2})[" + delim2 + "](\\d{4})$");
+                         } else if (iDelim2 == orderYear) {
+                            dateRegexp = new RegExp("^(\\d{2})[" + delim1 + "](\\d{2})(\\d{4})$");
+                         } else {
+                            dateRegexp = new RegExp("^(\\d{2})[" + delim1 + "](\\d{2})[" + delim2 + "](\\d{4})$");
+                         }
+                         var matched = dateRegexp.exec(value);
+                         if(matched != null) {
+                            if (!isValidDate(matched[2], matched[1], matched[3])) {
+                               if (i == 0) {
+                                   focusField = form[oDate[x][0]];
+                               }
+                               fields[i++] = oDate[x][1];
+                               bValid =  false;
+                            }
+                         } else {
+                            if (i == 0) {
+                                focusField = form[oDate[x][0]];
+                            }
+                            fields[i++] = oDate[x][1];
+                            bValid =  false;
+                         }
+                     } else if ((orderMonth < orderYear && orderMonth > orderDay)) {
+                         var iDelim1 = orderDay + DAY.length;
+                         var iDelim2 = orderMonth + MONTH.length;
+                         var delim1 = datePattern.substring(iDelim1, iDelim1 + 1);
+                         var delim2 = datePattern.substring(iDelim2, iDelim2 + 1);
+                         if (iDelim1 == orderMonth && iDelim2 == orderYear) {
+                             dateRegexp = new RegExp("^(\\d{2})(\\d{2})(\\d{4})$");
+                         } else if (iDelim1 == orderMonth) {
+                             dateRegexp = new RegExp("^(\\d{2})(\\d{2})[" + delim2 + "](\\d{4})$");
+                         } else if (iDelim2 == orderYear) {
+                             dateRegexp = new RegExp("^(\\d{2})[" + delim1 + "](\\d{2})(\\d{4})$");
+                         } else {
+                             dateRegexp = new RegExp("^(\\d{2})[" + delim1 + "](\\d{2})[" + delim2 + "](\\d{4})$");
+                         }
+                         var matched = dateRegexp.exec(value);
+                         if(matched != null) {
+                             if (!isValidDate(matched[1], matched[2], matched[3])) {
+                                 if (i == 0) {
+                                     focusField = form[oDate[x][0]];
+                                 }
+                                 fields[i++] = oDate[x][1];
+                                 bValid =  false;
+                              }
+                         } else {
+                             if (i == 0) {
+                                 focusField = form[oDate[x][0]];
+                             }
+                             fields[i++] = oDate[x][1];
+                             bValid =  false;
+                         }
+                     } else if ((orderMonth > orderYear && orderMonth < orderDay)) {
+                         var iDelim1 = orderYear + YEAR.length;
+                         var iDelim2 = orderMonth + MONTH.length;
+                         var delim1 = datePattern.substring(iDelim1, iDelim1 + 1);
+                         var delim2 = datePattern.substring(iDelim2, iDelim2 + 1);
+                         if (iDelim1 == orderMonth && iDelim2 == orderDay) {
+                             dateRegexp = new RegExp("^(\\d{4})(\\d{2})(\\d{2})$");
+                         } else if (iDelim1 == orderMonth) {
+                             dateRegexp = new RegExp("^(\\d{4})(\\d{2})[" + delim2 + "](\\d{2})$");
+                         } else if (iDelim2 == orderDay) {
+                             dateRegexp = new RegExp("^(\\d{4})[" + delim1 + "](\\d{2})(\\d{2})$");
+                         } else {
+                             dateRegexp = new RegExp("^(\\d{4})[" + delim1 + "](\\d{2})[" + delim2 + "](\\d{2})$");
+                         }
+                         var matched = dateRegexp.exec(value);
+                         if(matched != null) {
+                             if (!isValidDate(matched[3], matched[2], matched[1])) {
+                                 if (i == 0) {
+                                     focusField = form[oDate[x][0]];
+                                  }
+                                  fields[i++] = oDate[x][1];
+                                  bValid =  false;
+                              }
+                          } else {
+                              if (i == 0) {
+                                  focusField = form[oDate[x][0]];
+                              }
+                              fields[i++] = oDate[x][1];
+                              bValid =  false;
+                          }
+                     } else {
+                         if (i == 0) {
+                             focusField = form[oDate[x][0]];
+                         }
+                         fields[i++] = oDate[x][1];
+                         bValid =  false;
+                     }
+                  }
+               }
+               if (fields.length > 0) {
+                  focusField.focus();
+                  alert(fields.join('\n'));
+               }
+               return bValid;
+            }
+
+	    function isValidDate(day, month, year) {
+	        if (month < 1 || month > 12) {
+                    return false;
+                }
+                if (day < 1 || day > 31) {
+                    return false;
+                }
+                if ((month == 4 || month == 6 || month == 9 || month == 11) &&
+                    (day == 31)) {
+                    return false;
+                }
+                if (month == 2) {
+                    var leap = (year % 4 == 0 &&
+                               (year % 100 != 0 || year % 400 == 0));
+                    if (day>29 || (day == 29 && !leap)) {
+                        return false;
+                    }
+                }
+                return true;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="range"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateRange"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required,integer"
+                  msg="errors.range">
+
+         <javascript><![CDATA[
+            function validateRange(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oRange = new range();
+                for (x in oRange) {
+                    if ((form[oRange[x][0]].type == 'text' ||
+                         form[oRange[x][0]].type == 'textarea') &&
+                        (form[oRange[x][0]].value.length > 0)) {
+                        var iMin = parseInt(oRange[x][2]("min"));
+                        var iMax = parseInt(oRange[x][2]("max"));
+                        var iValue = parseInt(form[oRange[x][0]].value);
+                        if (!(iValue >= iMin && iValue <= iMax)) {
+                            if (i == 0) {
+                                focusField = form[oRange[x][0]];
+                            }
+                            fields[i++] = oRange[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                    focusField.focus();
+                    alert(fields.join('\n'));
+                }
+                return bValid;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="creditCard"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateCreditCard"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.creditcard">
+
+         <javascript><![CDATA[
+            function validateCreditCard(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oCreditCard = new creditCard();
+                for (x in oCreditCard) {
+                    if ((form[oCreditCard[x][0]].type == 'text' ||
+                         form[oCreditCard[x][0]].type == 'textarea') &&
+                        (form[oCreditCard[x][0]].value.length > 0)) {
+                        if (!luhnCheck(form[oCreditCard[x][0]].value)) {
+                            if (i == 0) {
+                                focusField = form[oCreditCard[x][0]];
+                            }
+                            fields[i++] = oCreditCard[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                    focusField.focus();
+                    alert(fields.join('\n'));
+                }
+                return bValid;
+            }
+
+            /**
+             * Reference: http://www.ling.nwu.edu/~sburke/pub/luhn_lib.pl
+             */
+            function luhnCheck(cardNumber) {
+                if (isLuhnNum(cardNumber)) {
+                    var no_digit = cardNumber.length;
+                    var oddoeven = no_digit & 1;
+                    var sum = 0;
+                    for (var count = 0; count < no_digit; count++) {
+                        var digit = parseInt(cardNumber.charAt(count));
+                        if (!((count & 1) ^ oddoeven)) {
+                            digit *= 2;
+                            if (digit > 9) digit -= 9;
+                        };
+                        sum += digit;
+                    };
+                    if (sum == 0) return false;
+                    if (sum % 10 == 0) return true;
+                };
+                return false;
+            }
+
+            function isLuhnNum(argvalue) {
+                argvalue = argvalue.toString();
+                if (argvalue.length == 0) {
+                    return false;
+                }
+                for (var n = 0; n < argvalue.length; n++) {
+                    if ((argvalue.substring(n, n+1) < "0") ||
+                        (argvalue.substring(n,n+1) > "9")) {
+                        return false;
+                    }
+                }
+                return true;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="email"
+            classname="org.apache.struts.util.StrutsValidator"
+               method="validateEmail"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.email">
+
+         <javascript><![CDATA[
+            function validateEmail(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oEmail = new email();
+                for (x in oEmail) {
+                    if ((form[oEmail[x][0]].type == 'text' ||
+                         form[oEmail[x][0]].type == 'textarea') &&
+                        (form[oEmail[x][0]].value.length > 0)) {
+                        if (!checkEmail(form[oEmail[x][0]].value)) {
+                            if (i == 0) {
+                                focusField = form[oEmail[x][0]];
+                            }
+                            fields[i++] = oEmail[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                    focusField.focus();
+                    alert(fields.join('\n'));
+                }
+                return bValid;
+            }
+
+            /**
+             * Reference: Sandeep V. Tamhankar (stamhankar@hotmail.com),
+             * http://javascript.internet.com
+             */
+            function checkEmail(emailStr) {
+               if (emailStr.length == 0) {
+                   return true;
+               }
+               var emailPat=/^(.+)@(.+)$/;
+               var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]";
+               var validChars="\[^\\s" + specialChars + "\]";
+               var quotedUser="(\"[^\"]*\")";
+               var ipDomainPat=/^(\d{1,3})[.](\d{1,3})[.](\d{1,3})[.](\d{1,3})$/;
+               var atom=validChars + '+';
+               var word="(" + atom + "|" + quotedUser + ")";
+               var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+               var domainPat=new RegExp("^" + atom + "(\\." + atom + ")*$");
+               var matchArray=emailStr.match(emailPat);
+               if (matchArray == null) {
+                   return false;
+               }
+               var user=matchArray[1];
+               var domain=matchArray[2];
+               if (user.match(userPat) == null) {
+                   return false;
+               }
+               var IPArray = domain.match(ipDomainPat);
+               if (IPArray != null) {
+                   for (var i = 1; i <= 4; i++) {
+                      if (IPArray[i] > 255) {
+                         return false;
+                      }
+                   }
+                   return true;
+               }
+               var domainArray=domain.match(domainPat);
+               if (domainArray == null) {
+                   return false;
+               }
+               var atomPat=new RegExp(atom,"g");
+               var domArr=domain.match(atomPat);
+               var len=domArr.length;
+               if ((domArr[domArr.length-1].length < 2) ||
+                   (domArr[domArr.length-1].length > 3)) {
+                   return false;
+               }
+               if (len < 2) {
+                   return false;
+               }
+               return true;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="cpf"
+            classname="br.gov.fnde.util.StrutsValidator"
+               method="validateCpf"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.cpf">
+
+         <javascript><![CDATA[
+            function validateCpf(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oCpf = new cpf();
+                for (x in oCpf) {
+                    if ((form[oCpf[x][0]].type == 'text' ||
+                         form[oCpf[x][0]].type == 'textarea') &&
+                        (form[oCpf[x][0]].value.length > 0)) {
+                        if (!checkCPF(form[oCpf[x][0]].value)) {
+                            if (i == 0) {
+                                focusField = form[oCpf[x][0]];
+                            }
+                            fields[i++] = oCpf[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                    focusField.focus();
+                    alert(fields.join('\n'));
+                }
+                return bValid;
+            }
+
+            function checkCPF (CPF) {
+
+                novoCpf = "";
+                for (i = 0; i < CPF.length; i++) {
+                    if ((CPF.charAt(i) >= "0") && (CPF.charAt(i) <= "9")) {
+                        novoCpf += CPF.charAt(i);
+                    }
+                }
+            
+                if (novoCpf.length != 11 || novoCpf == "00000000000" || novoCpf == "11111111111" ||
+                        novoCpf == "22222222222" ||	novoCpf == "33333333333" || novoCpf == "44444444444" ||
+                        novoCpf == "55555555555" || novoCpf == "66666666666" || novoCpf == "77777777777" ||
+                        novoCpf == "88888888888" || novoCpf == "99999999999") {
+                    return false;
+                }
+                soma = 0;
+                for (i=0; i < 9; i ++) {
+                    soma += parseInt(novoCpf.charAt(i)) * (10 - i);
+                }
+                resto = 11 - (soma % 11);
+                if (resto == 10 || resto == 11) {
+                    resto = 0;
+                }
+                if (resto != parseInt(novoCpf.charAt(9))) {
+                    return false;
+                }
+                soma = 0;
+                for (i = 0; i < 10; i ++) {
+                    soma += parseInt(novoCpf.charAt(i)) * (11 - i);
+                }
+                resto = 11 - (soma % 11);
+                if (resto == 10 || resto == 11) {
+                    resto = 0;
+                }
+                if (resto != parseInt(novoCpf.charAt(10))) {
+                    return false;
+                }
+                return true;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="cnpj"
+            classname="br.gov.fnde.util.StrutsValidator"
+               method="validateCnpj"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.cnpj">
+
+         <javascript><![CDATA[
+            function validateCnpj(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oCnpj = new cnpj();
+                for (x in oCnpj) {
+                    if ((form[oCnpj[x][0]].type == 'text' ||
+                         form[oCnpj[x][0]].type == 'textarea') &&
+                        (form[oCnpj[x][0]].value.length > 0)) {
+                        if (!checkCNPJ(form[oCnpj[x][0]].value)) {
+                            if (i == 0) {
+                                focusField = form[oCnpj[x][0]];
+                            }
+                            fields[i++] = oCnpj[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                    focusField.focus();
+                    alert(fields.join('\n'));
+                }
+                return bValid;
+            }
+
+            function checkCNPJ(CNPJ) {
+
+                novoCnpj = "";
+                for (i = 0; i < CNPJ.length; i++) {
+                    if ((CNPJ.charAt(i) >= "0") && (CNPJ.charAt(i) <= "9")) {
+                        novoCnpj += CNPJ.charAt(i);
+                    }
+                }
+
+                if (novoCnpj.length != 14 || novoCnpj == "00000000000000" ||
+                        novoCnpj == "11111111111111" || novoCnpj == "22222222222222" || novoCnpj == "33333333333333" ||
+                        novoCnpj == "44444444444444" || novoCnpj == "55555555555555" || novoCnpj == "66666666666666" ||
+                        novoCnpj == "77777777777777" || novoCnpj == "88888888888888" || novoCnpj == "99999999999999" ) {
+                    return false;
+                }
+		
+                soma = 0;
+                for (i=0, j = 5; i < 12; i++) {
+                    soma += j-- * (parseInt(novoCnpj.charAt(i)));
+                    if (j < 2) j = 9;
+                }
+		
+                soma = 11 - (soma % 11);
+		
+                if (soma > 9) {
+                    soma = 0;
+                }
+                if (soma == parseInt(novoCnpj.charAt(12))) {
+                    soma = 0;
+                    for (i=0, j = 6; i < 13; i++) {
+                        soma += j-- * parseInt(novoCnpj.charAt(i));
+                        if (j < 2) j = 9;
+                    }
+                    soma = 11 - (soma % 11);
+                    if (soma > 9) {
+                        soma = 0;
+                    }
+                    if (soma == parseInt(novoCnpj.charAt(13))) {
+                        return true;
+                    }
+                }
+                return false;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="cei"
+            classname="br.gov.fnde.util.StrutsValidator"
+               method="validateCei"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.cei">
+
+         <javascript><![CDATA[
+            function validateCei(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oCei = new cei();
+                for (x in oCei) {
+                    if ((form[oCei[x][0]].type == 'text' ||
+                         form[oCei[x][0]].type == 'textarea') &&
+                        (form[oCei[x][0]].value.length > 0)) {
+                        if (!checkCEI(form[oCei[x][0]].value)) {
+                            if (i == 0) {
+                                focusField = form[oCei[x][0]];
+                            }
+                            fields[i++] = oCei[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                    focusField.focus();
+                    alert(fields.join('\n'));
+                }
+                return bValid;
+            }
+
+            function checkCEI(CEI) {
+
+                novoCei = "";
+                for (i = 0; i < CEI.length; i++) {
+                    if ((CEI.charAt(i) >= "0") && (CEI.charAt(i) <= "9")) {
+                        novoCei += CEI.charAt(i);
+                    }
+                }
+
+                if (novoCei.length != 12 || novoCei == "000000000000" ||
+                        novoCei == "111111111111" || novoCei == "222222222222" || novoCei == "333333333333" ||
+                        novoCei == "444444444444" || novoCei == "555555555555" || novoCei == "666666666666" ||
+                        novoCei == "777777777777" || novoCei == "888888888888" || novoCei == "999999999999" ) {
+                    return false;
+                }
+
+                multiplicadores = new Array([7],[4],[1],[8],[5],[2],[1],[6],[3],[7],[4]);
+                soma = 0;
+			
+                for (i = 0; i <= 10; i++) {
+                    digito = parseInt(novoCei.charAt(i));
+                    soma += digito * multiplicadores[i];
+                }
+			    
+                digitos = '' + soma;			    
+                for (i = digitos.length; i < 4; i++) {
+                    digitos = '0' + digitos;
+                }
+                soma = parseInt(digitos.charAt(2)) + parseInt(digitos.charAt(3));
+
+                digitos = '' + soma;			    
+                for (var i = digitos.length; i < 2; i++) {
+                    digitos = '0' + digitos;
+                }
+			    
+                var dig = digitos.charAt(1);
+                if (dig != '0') {
+                    dig = '' + (10 - parseInt(dig));
+                }
+
+                if (dig != novoCei.charAt(11)) {
+                    return false;
+                }
+                return true;
+            }]]>
+         </javascript>
+
+      </validator>
+
+
+      <validator name="numeroProcesso"
+            classname="br.gov.fnde.util.StrutsValidator"
+               method="validateNumeroProcesso"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+              depends="required"
+                  msg="errors.numeroProcesso">
+
+         <javascript><![CDATA[
+            function validateNumeroProcesso(form) {
+                var bValid = true;
+                var focusField = null;
+                var i = 0;
+                var fields = new Array();
+                oNumeroProcesso = new numeroProcesso();
+                for (x in oNumeroProcesso) {
+                    if ((form[oNumeroProcesso[x][0]].type == 'text' ||
+                         form[oNumeroProcesso[x][0]].type == 'textarea') &&
+                        (form[oNumeroProcesso[x][0]].value.length > 0)) {
+                        if (!checkNumeroProcesso(form[oNumeroProcesso[x][0]].value)) {
+                            if (i == 0) {
+                                focusField = form[oNumeroProcesso[x][0]];
+                            }
+                            fields[i++] = oNumeroProcesso[x][1];
+                            bValid = false;
+                        }
+                    }
+                }
+                if (fields.length > 0) {
+                    focusField.focus();
+                    alert(fields.join('\n'));
+                }
+                return bValid;
+            }
+
+            function calculaDigito(string, index) {
+                soma = 0;
+                max = index;
+        
+                while (index >= 2) {
+                    soma += parseInt(string.substring(max - index, max - index + 1)) * index;
+                    index--;
+                }
+        
+                soma = 11 - (soma % 11);
+
+                if (soma == 10) {
+                    soma = 0;
+                }
+                if (soma == 11) {
+                    soma = 1;
+                }
+                return '' + soma;
+            }
+
+            function checkNumeroProcesso(numeroProcesso) {
+
+                novoValor = "";
+                for (i = 0; i < numeroProcesso.length; i++) {
+                    if ((numeroProcesso.charAt(i) >= "0") && (numeroProcesso.charAt(i) <= "9")) {
+                        novoValor += numeroProcesso.charAt(i);
+                    }
+                }
+                tamanho = novoValor.length;
+
+                if (tamanho == 15 || tamanho == 17) {
+
+                    novoValor = novoValor.substring(0, tamanho - 2);
+
+                    digito1 = calculaDigito(novoValor, tamanho - 1);
+                    novoValor += digito1;
+
+                    digito2 = calculaDigito(novoValor, tamanho);
+                    novoValor += digito2;
+
+                    if (numeroProcesso.substring(numeroProcesso.length - 2) != novoValor.substring(novoValor.length - 2)) {
+                        return false;
+                    }
+                    return true;
+                } else {
+                    return false;
+                }
+            }]]>
+         </javascript>
+
+      </validator>
+
+   </global>
+
+</form-validation>

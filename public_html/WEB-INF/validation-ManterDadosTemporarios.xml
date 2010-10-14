@@ -1,0 +1,11 @@
+<form-validation>
+
+  <formset>
+    <form name="ManterDadosTemporariosForm">
+      <field property="escolaCnpjNumero" depends="required" page="4">
+  			<arg0 key="Escola.cnpj"/>
+      </field>
+    </form>
+  </formset>
+
+</form-validation>

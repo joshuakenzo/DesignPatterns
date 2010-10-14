@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+<tlibversion>1.1</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>tpt</shortname>
+<uri>http://www.fnde.gov.br</uri>
+<info>Taglibs de Apresentação para Telas Processuais</info>
+
+    <!-- <TagLib para apresentacao de Formulario> -->
+    	<tag> 
+        	<name>formulario</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.FormularioTag</tagclass>
+	    	<info>Definicao de formulario - cabecalho</info>
+
+            <attribute>
+               <name>texto</name>     
+               <required>yes</required>
+               <rtexprvalue>true</rtexprvalue>
+            </attribute>
+
+            <attribute>
+               <name>width</name>     
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+            </attribute>
+    	</tag>
+    <!-- <FormularioTag> -->
+    
+    <!-- <TagLib para apresentacao de Grupo> -->
+    	<tag> 
+        	<name>grupo</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.GrupoTag</tagclass>
+	    	<info>Definicao de Grupo - cabecalho</info>
+
+            <attribute>
+               <name>texto</name>     
+               <required>yes</required>
+               <rtexprvalue>true</rtexprvalue>
+            </attribute>
+    	</tag>
+    <!-- <GrupoTag> -->
+    
+    <!-- <TagLib para apresentacao de Linha> -->
+    	<tag> 
+        	<name>linha</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.LinhaTag</tagclass>
+	    	<info>Definicao de Linha</info>
+    	</tag>
+    <!-- <LinhaTag> -->
+    
+    <!-- <TagLib para apresentacao de Celula de Formulario> -->
+    	<tag> 
+        	<name>celula</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.CelulaTag</tagclass>
+	    	<info>Definicao de Celula/caixa de campo</info>
+
+            <attribute>
+               <name>texto</name>     
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+            </attribute>
+
+            <attribute>
+               <name>tamanho</name>     
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+            </attribute>
+
+             <attribute>
+               <name>align</name>     
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+            </attribute>
+
+    	</tag>
+    <!-- <CelulaTag> -->
+
+    <!-- <TagLib para apresentacao de Barra> -->
+    	<tag> 
+        	<name>barra</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.BarraTag</tagclass>
+	    	<info>Definicao de Barra</info>
+    	</tag>
+    <!-- <BarraTag> -->
+
+     <!-- <TagLib para apresentacao de BotaoDireitoTag> -->
+    	<tag> 
+        	<name>botaoDireito</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.BotaoDireitoTag</tagclass>
+	    	<info>Definicao ddo Botao Direito</info>
+    	</tag>
+    <!-- <BotaoDireitoTag> -->
+
+    <!-- <TagLib para apresentacao de BotaoEsquerdoTag> -->
+    	<tag> 
+        	<name>botaoEsquerdo</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.BotaoEsquerdoTag</tagclass>
+	    	<info>Definicao ddo Botao Esquerdo</info>
+    	</tag>
+    <!-- <BotaoEsquerdoTag> -->
+
+    <!-- <TagLib para apresentacao de BotaoMeioTag> -->
+    	<tag> 
+        	<name>botaoMeio</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.BotaoMeioTag</tagclass>
+	    	<info>Definicao ddo Botao do Meio</info>
+    	</tag>
+    <!-- <BotaoMeioTag> -->
+    <!-- <TagLib para apresentacao de CamadaTag> -->
+    	<tag> 
+        	<name>camada</name>
+	    	<tagclass>br.gov.fnde.lib.jsp.taglib.CamadaTag</tagclass>
+	    	<info>Definicao da Camada</info>
+    	</tag>
+    <!-- <CamadaTag> -->
+</taglib>
